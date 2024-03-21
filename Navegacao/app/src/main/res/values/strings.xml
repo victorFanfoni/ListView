@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Navegacao</string>
+    <string name="title_activity_segunda_tela">SegundaTela</string>
+    <string name="Calcular">Calcular Total</string>
+    <string name="voltar">Voltar</string>
+    <string name="ClickNoBotaoParaVoltar">Click no botao para Voltar</string>
+    <string name="quantidade_de_coxinhas">Quantidade de Coxinhas</string>
+    <string name="quantidade_de_bebidas">Quantidade de Bebidas</string>
+    <string name="calcular">Calcular</string>
+    <string name="comanda">Comanda</string>
+</resources>

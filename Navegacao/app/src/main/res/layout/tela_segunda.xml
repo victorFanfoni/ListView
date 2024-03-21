@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/Toolbar_segindaTela"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/toolbar"
+        android:title="Total a pagar"
+        android:titleMarginStart="150dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewQuantidadeCoxinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Toolbar_segindaTela"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="23dp"
+        android:text="Quantidade de Coxinhas:" />
+
+    <TextView
+        android:id="@+id/textViewQuantidadeBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQuantidadeCoxinha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Quantidade de Bebidas:" />
+
+    <TextView
+        android:id="@+id/textViewSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQuantidadeBebida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:text="Soma dos Produtos:" />
+
+    <TextView
+        android:id="@+id/textViewTaxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSoma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="Taxa de Serviço (10%):" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTaxa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Total a Pagar:" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/buttin_voltar"
+        android:drawableStart="@drawable/ic_arrow_voltar"
+        android:text="Voltar" />
+
+</RelativeLayout>
