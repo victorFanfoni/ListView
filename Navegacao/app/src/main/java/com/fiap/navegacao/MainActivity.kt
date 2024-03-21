@@ -24,8 +24,8 @@ class MainActivity : ComponentActivity() {
         val buttonCalcular = findViewById<Button>(R.id.btCalcular)
         buttonCalcular.setOnClickListener {
 
-            val editTextQuantidadeCoxinha = findViewById<EditText>(R.id.editTextQuantidadeCoxinha)
-            val editTextQuantidadeBebida = findViewById<EditText>(R.id.editTextQuantidadeBebida)
+            val editTextQuantidadeCoxinha = findViewById<EditText>(R.id.QuantidadeCoxinha)
+            val editTextQuantidadeBebida = findViewById<EditText>(R.id.QuantidadeBebida)
 
             val quantidadeCoxinha = editTextQuantidadeCoxinha.text.toString().toIntOrNull() ?: 0
             val quantidadeBebida = editTextQuantidadeBebida.text.toString().toIntOrNull() ?: 0
