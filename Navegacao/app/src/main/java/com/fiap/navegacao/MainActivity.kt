@@ -23,14 +23,13 @@ class MainActivity : ComponentActivity() {
 
         val buttonCalcular = findViewById<Button>(R.id.btCalcular)
         buttonCalcular.setOnClickListener {
-            // Recuperar as quantidades inseridas pelo usuário
+
             val editTextQuantidadeCoxinha = findViewById<EditText>(R.id.editTextQuantidadeCoxinha)
             val editTextQuantidadeBebida = findViewById<EditText>(R.id.editTextQuantidadeBebida)
 
             val quantidadeCoxinha = editTextQuantidadeCoxinha.text.toString().toIntOrNull() ?: 0
             val quantidadeBebida = editTextQuantidadeBebida.text.toString().toIntOrNull() ?: 0
 
-            // Calcular os preços
             val totalCoxinha = quantidadeCoxinha * precoCoxinha
             val totalBebida = quantidadeBebida * precoBebida
             val totalProdutos = totalCoxinha + totalBebida
@@ -38,7 +37,6 @@ class MainActivity : ComponentActivity() {
             val taxaServicoValor = totalProdutos * taxaServico
             val totalComTaxa = totalProdutos + taxaServicoValor
 
-            // Passar os valores para a SegundaActivity
             val intent = Intent(this, SegundaActivity::class.java)
             intent.putExtra("quantidadeCoxinha", quantidadeCoxinha)
             intent.putExtra("quantidadeBebida", quantidadeBebida)
